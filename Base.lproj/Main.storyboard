@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QcR-l0-4jj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="FirstViewController" customModule="FlipDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4e-wp-nIf">
+                                <rect key="frame" x="185" y="250" width="230" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="NdC-Nu-gkq"/>
+                                    <constraint firstAttribute="width" constant="230" id="yVP-zQ-gl9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Second">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickSecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Pg-D0-L2m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.51764705879999995" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="j4e-wp-nIf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5cH-4h-HZg"/>
+                            <constraint firstItem="j4e-wp-nIf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q5E-zb-G1R"/>
+                            <constraint firstItem="j4e-wp-nIf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nQO-xm-iER"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sWO-cH-zHA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="776"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W9D-Ae-iKf">
+            <objects>
+                <navigationController id="QcR-l0-4jj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DRs-up-YwY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LkL-e7-Ad1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAh-rv-J43" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="1011"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="UUO-9X-6Re">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="ndc-Yn-og2" customClass="SecondViewController" customModule="FlipDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PGB-6a-9WY"/>
+                        <viewControllerLayoutGuide type="bottom" id="f1x-M5-YU7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iJw-f3-Rf8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBN-wf-UuF">
+                                <rect key="frame" x="185" y="250" width="230" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="J95-qV-vdi"/>
+                                    <constraint firstAttribute="width" constant="230" id="mdy-43-GeT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="First">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickFirst:" destination="ndc-Yn-og2" eventType="touchUpInside" id="R7X-FQ-SfT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.7843137255" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iBN-wf-UuF" firstAttribute="centerX" secondItem="iJw-f3-Rf8" secondAttribute="centerX" id="GdG-CC-Iog"/>
+                            <constraint firstItem="iBN-wf-UuF" firstAttribute="centerY" secondItem="iJw-f3-Rf8" secondAttribute="centerY" id="Git-YQ-3yc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5kl-lL-Xeo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="1487"/>
+        </scene>
+    </scenes>
+</document>
